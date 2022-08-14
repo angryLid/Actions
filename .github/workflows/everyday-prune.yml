@@ -1,4 +1,4 @@
-name: Everyday Prune
+name: Everyday Prune-1
 on:
   schedule:
     - cron: '0 19 * * *'
@@ -10,4 +10,4 @@ jobs:
         run: |
           curl --request POST \
           --url 'https://chatroom-two.vercel.app/api/cron' \
-          --header 'Authorization: Bearer ${{ secrets.CRON_KEY }}'
+          --header 'Authorization: Bearer ${{ secrets.CRON_SECRET }}'
